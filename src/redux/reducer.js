@@ -44,6 +44,9 @@ export const cartReducer = createReducer({
                 sum = sum + (i.qty * i.price);
             })
             state.shipping = sum > 1000 ? 0 : 50;
+            if (sum == 0) {
+                state.shipping = 0;
+            }
             state.subtotal = sum;
             state.tax = Number((sum * 0.18).toFixed());
             state.total = state.shipping + state.subtotal + state.tax;
