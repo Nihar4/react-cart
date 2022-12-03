@@ -1,0 +1,80 @@
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 2px solid;
+  > .left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-left: 17rem;
+    width: 60%;
+    height: 100%;
+    // border: 2px solid yellowgreen;
+
+    > h1 {
+      font-size: 2.5rem;
+      margin: 1rem;
+    }
+    > p {
+      font-size: 1rem;
+      margin: 1rem;
+    }
+    > h2 {
+      font-size: 1.5rem;
+      color: $first;
+      font-weight: 500;
+      margin: 1rem;
+    }
+    > .btn {
+      display: flex;
+      //   justify-content: center;
+      align-items: center;
+      > button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+      > .first {
+        width: 8rem;
+        height: 3rem;
+        font-size: 1rem;
+        font-weight: 500;
+        background-color: hsl(0, 0%, 75%);
+        color: $title;
+
+        &:hover {
+          background-color: hsl(0, 0%, 65%);
+        }
+      }
+      > .second {
+        font-size: 1rem;
+        font-weight: 500;
+        width: 10rem;
+        height: 3.5rem;
+        background-color: $btn;
+        color: white;
+        &:hover {
+          background-color: $btn-alt;
+        }
+      }
+    }
+  }
+  > .right {
+    width: 40%;
+    height: 100%;
+    // border: 2px solid crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $first;
+    margin-right: 20%;
+    > img {
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.cart {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+
+  > .left {
+    padding: 2rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    h1 {
+      color: black;
+      font: 100 2rem "Roboto";
+    }
+  }
+
+  > .right {
+    border-radius: 100px 0 0 100px;
+    background-color: $first;
+    color: black;
+    height: 100%;
+    width: 100%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.182);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    > h2 {
+      margin: 1rem;
+      font: 100 1.8rem "Roboto";
+      letter-spacing: 2px;
+
+      &:last-of-type {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.cartitems {
+  background-color: $border;
+  color: black;
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  align-items: center;
+
+  > img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+  > article {
+    h3 {
+      text-transform: uppercase;
+    }
+    p {
+      color: $first;
+      margin: 0.3rem 0;
+    }
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+
+    > p {
+      margin: 0.5rem;
+    }
+
+    > button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      outline: none;
+      background-color: $btn;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $btn-alt;
+      }
+    }
+  }
+
+  > svg {
+    color: $btn;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: auto;
+
+    &:hover {
+      color: $first;
+    }
+  }
+}

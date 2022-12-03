@@ -1,0 +1,91 @@
+.sub {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  background-color: $first;
+  justify-content: center;
+  align-items: center;
+
+  > .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid yellow;
+
+    > h1 {
+      font-size: 2.7rem;
+      font-weight: 500;
+      margin: 1rem 0;
+      letter-spacing: 2px;
+    }
+    > p {
+      font-size: 1rem;
+      margin: 1rem 0;
+      font-weight: 400;
+      color: $text;
+    }
+  }
+  > .right {
+    margin: 1rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid blue;
+
+    > input {
+      width: 70%;
+      height: 3.5rem;
+      text-align: start;
+      outline: none;
+      border: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    > button {
+      width: 30%;
+      height: 3.5rem;
+      text-align: center;
+      background-color: $btn;
+      color: white;
+      outline: none;
+      border: none;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: $btn-alt;
+      }
+    }
+  }
+}
+
+footer {
+  width: 70%;
+  height: 100%;
+  margin: 4rem auto;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  //   align-items: center;
+
+  div {
+    // border: 2px solid;
+    > h3 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 1rem;
+    }
+    > p {
+      margin: 0.5rem;
+    }
+    > svg {
+      margin: 0.5rem;
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+  }
+}

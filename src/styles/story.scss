@@ -1,0 +1,86 @@
+.story {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 10%;
+
+  > .left {
+    display: flex;
+    width: 45%;
+    height: 100%;
+    // border: 2px solid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    > img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -15%;
+      left: 10%;
+      object-fit: contain;
+    }
+    > .square {
+      width: 450px;
+      height: 450px;
+      background-color: $first;
+    }
+  }
+  > .right {
+    width: 45%;
+    height: 450px;
+    // border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    // justify-cont;
+
+    > h1 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin: 0 1rem;
+      //   padding: 1rem;
+      letter-spacing: 2px;
+      //   text-align: center;
+    }
+    > h3 {
+      margin: 2rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      border-top: 2px solid $first;
+      text-align: center;
+      padding: 0.7rem 0;
+      width: fit-content;
+      letter-spacing: 5px;
+    }
+    > p {
+      margin: 1rem;
+      //   padding: 0.5rem;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    > a {
+      > button {
+        width: 10rem;
+        height: 3rem;
+        background-color: $btn;
+        color: white;
+        margin: 2rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+
+        &:hover {
+          background-color: $btn-alt;
+        }
+      }
+    }
+  }
+}
